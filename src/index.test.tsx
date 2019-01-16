@@ -6,6 +6,6 @@ import { App } from './index'
 test('renders correctly', () => {
   const tree = renderer.create(
     <App />
-  )
-  expect(tree).toBeDefined()
+  ).toJSON()
+  expect(tree).toMatchSnapshot()
 })
